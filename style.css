@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: myfont;
+  src: url(CastIron-Condensed.otf);
+}
+@font-face {
+  font-family: myfont2;
+  src: url(Beta.ttf);
+}
+body {
+  background-image: url(copy.jpg);
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+nav {
+  position: fixed;
+  top: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 22;
+  height: 50px;
+  width: 100%;
+}
+.follow {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-transform: uppercase;
+}
+.first {
+  width: 70%;
+}
+.social-img {
+  height: 30px;
+  width: auto;
+}
+ul {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 11;
+  align-items: center;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-family: myfont;
+  font-size: 4vh;
+  text-transform: uppercase;
+  color: rgb(8, 8, 8);
+}
+section {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.left {
+  background: url(copy.jpg);
+  position: absolute;
+  font-size: 30vh;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  grid-column: 1/3;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: myfont2;
+  color: transparent;
+  -webkit-background-clip: text;
+  clip-path: polygon(0 0, 50% 0%, 50% 100%, 0 100%);
+}
+.right {
+  height: 100vh;
+  color: white;
+  font-family: myfont2;
+  display: flex;
+  align-items: center;
+
+  width: 50vw;
+  grid-column: 2/3;
+  font-size: 30vh;
+}
+.main-content {
+  position: absolute;
+}
+.corner-content {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 7vh;
+  right: -100px;
+  color: rgb(143, 139, 139);
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+}
+.blur {
+  grid-column: 1/2;
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: rgba(252, 252, 253, 0.197);
+  backdrop-filter: blur(30px);
+}
+.blur-content {
+  display: flex;
+  justify-content: space-around;
+
+  width: 60%;
+  height: 200px;
+  overflow: visible;
+  flex-direction: column;
+}
+
+.title {
+  position: relative;
+  color: white;
+  font-size: 4vh;
+  text-transform: uppercase;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title::after {
+  content: "01";
+  position: absolute;
+  top: -3px;
+  font-size: 5vh;
+  color: rgb(211, 205, 205);
+  left: -70px;
+}
+.trip-link {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
